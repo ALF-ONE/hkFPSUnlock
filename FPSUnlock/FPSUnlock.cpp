@@ -16,7 +16,7 @@ public:
 				if (baseAddress != NULL)
 				{
 					urmem::sig_scanner scan;
-					if (!scan.init(baseAddress)) continue;
+					if (!scan.init(baseAddress)) break;
 
 					urmem::address_t AddClientMessageAddress, FPSUnlockAddress, FPSLimitAddress;
 					if (!scan.find("\x56\x8B\x74\x24\x0C\x8B\xC6\x57\x8B\xF9", "xxxxxxxxxx", AddClientMessageAddress)) break;
