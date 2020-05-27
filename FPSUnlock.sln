@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FPSUnlock", "FPSUnlock\FPSUnlock.vcxproj", "{AFC85BAF-88F0-4204-9457-A2EAA0A32B64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFC85BAF-88F0-4204-9457-A2EAA0A32B64}.Release|Win32.ActiveCfg = Release|Win32
+		{AFC85BAF-88F0-4204-9457-A2EAA0A32B64}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE7CD55C-9BC8-4309-973C-1BA3B0EBDFF8}
+	EndGlobalSection
+EndGlobal
