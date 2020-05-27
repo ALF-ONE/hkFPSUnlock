@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+*.log
+*.tlog
+*.ipch
+*.db
+.vs/FPSUnlock/v16/.suo
