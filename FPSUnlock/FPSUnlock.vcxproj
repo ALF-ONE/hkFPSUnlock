@@ -11,6 +11,7 @@
     <ProjectGuid>{AFC85BAF-88F0-4204-9457-A2EAA0A32B64}</ProjectGuid>
     <RootNamespace>FPSUnlock</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <ProjectName>hkFPSUnlock</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
