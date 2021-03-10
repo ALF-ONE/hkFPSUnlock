@@ -14,6 +14,11 @@ private:
 	static auto __stdcall HOOK_GameLoop() -> void {
 		hkGameLoop->call<urmem::calling_convention::stdcall, void>();
 
+		static bool bInit = false;
+
+		if (bInit)
+			return;
+
 		urmem::address_t baseAddress = reinterpret_cast<urmem::address_t>(GetModuleHandle("samp.dll"));
 		if (baseAddress == NULL)
 			return;
@@ -48,7 +53,9 @@ private:
 		gamePatch[0] = std::make_shared<urmem::patch>(0xBAB318, urmem::bytearray_t{ 0x00 });
 		gamePatch[1] = std::make_shared<urmem::patch>(0x53E94C, urmem::bytearray_t{ 0x00 });
 
-		hkGameLoop->disable();
+		bInit = true;
+
+		//hkGameLoop->disable();
 	}
 
 	static auto __stdcall HOOK_ADDClientMessage(DWORD dwColor, const char* szText) -> void {
